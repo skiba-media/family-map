@@ -579,3 +579,14 @@
         }
       
       }
+
+.footer-link{
+    color: rgb(82, 82, 82);
+}
+.footer-link:hover{
+    color: rgb(187, 187, 187);
+}
+
+.footer-link:focus{
+    color: rgb(82, 82, 82);
+}
