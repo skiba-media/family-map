@@ -196,7 +196,8 @@ button:focus {
     display: block;
     flex-wrap: wrap;
     width: 250px;
-    height: auto;
+	height: auto;
+	transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
 }
 
@@ -1029,7 +1030,6 @@ button#sidebarCollapse {
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 	color: #fff;
-	float: left;
 	width: 165px;
 	height: 45px;
 	text-align: center;
@@ -1241,8 +1241,6 @@ figure.effect-service:hover {
     margin-top: 0px;
 }
 
-.services_list ol {
-} 
 
 .services_list ul li {
     font-size: 14;
@@ -1276,8 +1274,6 @@ figure.effect-service:hover {
 .gallery-box {
 	padding: 70px 0px 120px;
 }
-
-.gallery-box ul {}
 
 .gallery-box ul li {
 	position: relative;
@@ -1814,8 +1810,6 @@ p.count-text {
 .dit-right a:hover {
 	color: #57cef8;
 }
-
-.contact-block {}
 
 .contact-block .form-group .form-control {
 	background: #333;
