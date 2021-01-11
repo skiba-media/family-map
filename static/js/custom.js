@@ -20,20 +20,25 @@
 		if (toggle) {
 			$('.navbar-collapse').collapse('hide');
 		}
-	});
+  });
+  
+  $('.nav-link').on('click', () => {
+    $('.navbar-collapse').collapse('hide');
+  })
 	
 	/* ..............................................
     Fixed Menu
     
-    $(window).on('scroll', function () {
-		if ($(window).scrollTop() > 50) {
-			$('.top-header').addClass('fixed-menu');
-		} else {
-			$('.top-header').removeClass('fixed-menu');
-		}
-	});
+    
 
     ................................................. */
+    // $(window).on('scroll', function () {
+    //   if ($(window).scrollTop() > 50) {
+    //     $('.top-header').addClass('fixed-menu');
+    //   } else {
+    //     $('.top-header').removeClass('fixed-menu');
+    //   }
+    // });
 
 	/* ..............................................
     Properties Filter
