@@ -285,7 +285,7 @@ h2.featured:before {
 
 h2.super {
     margin-bottom: 1.5rem;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: var(--h1-weight);
     line-height: 1.2;
     font-family: var(--h1-font);
@@ -582,7 +582,7 @@ td {
 
 section {
     position: relative;
-    width: 100%;
+    width: 100vw;
     padding: 130px 0;
     background-size: cover;
     background-attachment: fixed;
@@ -1493,7 +1493,7 @@ header .navbar-expand .navbar-brand i.leverage-2-0 {
 }
 
 header .navbar-expand .navbar-brand img {
-    height: var(--nav-brand-height);
+    height:calc(var(--nav-brand-height) + 35px) ;
 }
 
 .navbar-expand .navbar-nav .nav-item {
@@ -3893,11 +3893,11 @@ footer .copyright a:not(.btn) {
     body h1,
     body .slide-content .title,
     body h2.super {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     body h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     /* #endregion General */
@@ -3966,7 +3966,7 @@ footer .copyright a:not(.btn) {
     body h1,
     body .slide-content .title,
     body h2.super {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     body .text-md-left h2.featured,
@@ -4247,7 +4247,7 @@ footer .copyright a:not(.btn) {
 
     header .navbar-expand .navbar-brand img {
         height: auto;
-        max-height: var(--nav-brand-height);
+        max-height:calc(var(--nav-brand-height) + 35px) ;
     }
 
     /* #endregion Header */
@@ -4281,7 +4281,7 @@ footer .copyright a:not(.btn) {
     body h1,
     body .slide-content .title,
     body h2.super {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     
     /* #endregion General */
