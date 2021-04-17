@@ -254,30 +254,34 @@
                                 is appropriate for prenatal mothers and children from birth to five, including dual
                                 language learners.</p>
                         </div>
-                        <div class="accordion col-12 align-self-center mt-4" id="accordion">
+                        <ul style="list-style-type:none;">
                             <% for(var i=0; i < faq.length; i++) { %>
-                                <div class="card-header" id="heading<%= i %>">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link nav-link" type="button" data-toggle="collapse"
-                                            data-target="#collapse<%= i %>" aria-expanded="true"
-                                            aria-controls="collapse<%= i %>">
-                                            <%= faq[i].question %>
-                                        </button>
-                                    </h2>
-                                </div>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-12 align-self-center">
+                                            <a data-toggle="collapse" href="#collapse<%= i %>" role="button"
+                                                aria-expanded="false" aria-controls="collapse<%= i %>">
+                                                <h5>
+                                                    <%= faq[i].question %>
+                                                </h5>
+                                            </a>
+                                            <div class="collapse" id="collapse<%= i %>">
+                                                <ul>
+                                                    <li>
+                                                        <%= faq[i].answer %>
+                                                    </li>
+                                                </ul>
 
-                                <div id="collapse<%= i %>" class="collapse" aria-labelledby="heading<%= i %>"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <%= faq[i].answer %>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </li>
                                 <% } %>
-
-                        </div>
+                        </ul>
                     </div>
-                </main>
             </div>
+            </main>
+        </div>
         </div>
     </section>
 
